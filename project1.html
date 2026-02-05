@@ -1,67 +1,235 @@
+
+]
 <!DOCTYPE html>
 <html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kiran's Portfolio | Full Stack Developer</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2c3e50;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Skills & Lists */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: #e9f5ff;
+            padding: 12px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skills-list li:hover {
+            transform: translateY(-3px);
+            background: #d0eaff;
+        }
+
+        /* Tech Glossary */
+        dl {
+            margin: 20px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        dd {
+            margin-left: 20px;
+            color: #666;
+        }
+
+        /* Contacts */
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        /* LinkedIn Image */        .linkedin-img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 50%;
+            border: 3px solid #3498db;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        .back-to-top a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>kiran-full stack developer</h1>
-    <h2>welcome to my portfolio website ! use navigation below to explore</h2>
-    <ul>
-        <li><a href="#me">About me</a></li>
-        <li><a href="#skk">skills </a></li>
-        <li><a href="#pj">projects</a></li>
-        <li><a href="#cn">contacts</a></li>
-        <li><a href="./kiran.Resume.pdf" download="">download resume</a></li>
-    </ul>
-    <h2 ><section id="me">about me</section></h2>
-    <h3>i am a passionate full stack developer with expetise in both frontend and backend technologies.you can check my git hub profile for open source contributions </h3>
-    <a href="https://github.com/kirankalingiri83-art" target="_blank"> visit my git hub</a>
-    <h2 id="skk">skills</h2>
-    <ul>
-        <li>HTML,CSS,JavaScript </li>
-        <li>core java,JDBC,spring,hybernate</li>
-        <li>mongoDB,sql</li>
-    </ul>
-    <h2 id="lg">learning goals</h2>
-    <ol>advanced frontend development
-        <li><ul>
-            <li>React.js</li>
-            <li>Next.js</li>
-        </ul></li>
-        <li> AI integration in web apps</li>
+    <header>
+        <h1>KIRAN - FULL STACK DEVELOPER</h1>
+        <h2>Welcome to my portfolio! Explore my skills, projects, and more below</h2>
+    </header>
 
-        
-    </ol>
-    <h2 id="thg">tech glossary</h2>
-    <dl><dt>API
-        <dd>
-            application programming interface for system communication
-        </dd>
-        <dt>CI/CD
-           <dd>
-            continuous integration and continuous deployment process
-           </dd>
-        </dt>
-    </dt></dl>
-    <h2 id="pj">projects</h2>
-    <ul><li>
-        youtube blog
-    </li></ul>
-    <h2 id="cn">contacts
-       
-    </h2>
-     <ul>
-            <li>email:<a href="mailto:kirankalingiri83@gmail.com">kirankalingiri83@gmail.com</a></li>
-            <li>contact:<a href="tel:9182504528">9182504528</a></li>
+    <nav>
+        <ul>
+            <li><a href="#me">About Me</a></li>
+            <li><a href="#skk">Skills</a></li>
+            <li><a href="#pj">Projects</a></li>
+            <li><a href="#cn">Contacts</a></li>
+            <li><a href="./kiran.resume.pdf" download>Download Resume</a></li>
         </ul>
-    <h3>connect me via
+    </nav>
+
+    <!-- About Me -->
+    <section id="me">
+        <h2>About Me</h2>
+        <h3>I am a passionate full stack developer with expertise in both frontend and backend technologies. Check my GitHub profile for open-source contributions</h3>
+        <a href="https://github.com/kirankalingiri83-art" target="_blank">Visit my GitHub</a>
+    </section>
+
+    <!-- Skills -->
+    <section id="skk">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Core Java</li>
+            <li>JDBC</li>
+            <li>Spring</li>
+            <li>Hibernate</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <!-- Learning Goals -->
+    <section id="lg">
+        <h2>Learning Goals</h2>
+        <ol>
+            <li>
+                <strong>Advanced Frontend Development</strong>
+                <ul>
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                </ul>
+            </li>
+            <li>AI Integration in Web Apps</li>
+        </ol>
+    </section>
+
+    <!-- Tech Glossary -->
+    <section id="thg">
+        <h2>Tech Glossary</h2>
+        <dl>
+            <dt>API</dt>
+            <dd>Application Programming Interface for system communication</dd>
+            
+            <dt>CI/CD</dt>
+            <dd>Continuous Integration and Continuous Deployment process</dd>
+        </dl>
+    </section>
+
+    <!-- Projects -->
+    <section id="pj">
+        <h2>Projects</h2>
+        <ul>
+            <li>YouTube Blog</li>
+        </ul>
+    </section>
+
+    <!-- Contacts -->
+    <section id="cn">
+        <h2>Contacts</h2>
+        <ul class="contact-list">
+            <li>Email: <a href="mailto:kirankalingiri83@gmail.com">kirankalingiri83@gmail.com</a></li>
+            <li>Contact: <a href="tel:9182504528">918-250-4528</a></li>
+        </ul>
+        <h3>Connect me via</h3>
         <a href="https://www.linkedin.com/in/kiran-k-628299273">
-            <img src="data:image/png;base64,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" alt="" height="30">
-          </a>
-       
+            <img src="data:image/png;base64,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" alt="LinkedIn Profile" class="linkedin-img" height="30">
+        </a>
     </h3>
-<h2><a href="">click here to go to top</a> </h2>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#top">↑ Click here to go to top</a>
+    </div>
 </body>
 </html>
